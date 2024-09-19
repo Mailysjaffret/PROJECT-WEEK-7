@@ -32,23 +32,33 @@ Build a predictive model to estimate newborn birth weights using maternal health
 
 - Machine Learning:
   - scikit-learn:
-    - Model selection: train_test_split 🔀 for splitting data into training and testing sets.
-    - Regression models: KNeighborsRegressor, LinearRegression, DecisionTreeRegressor, BaggingRegressor, RandomForestRegressor, AdaBoostRegressor, GradientBoostingRegressor ⚙️.
-  - Evaluation metrics: r2_score, mean_absolute_error, mean_squared_error 📈.
+    - Model selection: train_test_split for splitting data into training and testing sets.
+    - Regression models: KNeighborsRegressor, LinearRegression, DecisionTreeRegressor, BaggingRegressor, RandomForestRegressor, AdaBoostRegressor, GradientBoostingRegressor.
+  - Evaluation metrics: r2_score, mean_absolute_error, mean_squared_error.
   - Hyperparameter tuning: GridSearchCV for model optimization.
 
 # 📊 Findings and Conclusions
 
-- The Pregnancy Week variable showed the highest correlation with the target variable among all features, indicating its significant influence on birth weight predictions.
-- Multicollinearity was detected in features such as Age, Race, and Education of both Mother and Father, as indicated by high VIF scores, suggesting that these variables are highly interrelated.
-- Linear Regression performance was limited due to the presence of non-linear relationships in the data that the model could not capture effectively.
-- Ensemble methods like Bagging and Random Forest significantly improved predictive accuracy by reducing overfitting and enhancing model robustness, making them more suitable for this dataset.
+- Key Features:
+The Pregnancy Week variable had the highest correlation with the target variable, making it the most significant predictor of birth weight.
+
+- Multicollinearity:
+Features such as Age, Race, and Education of both Mother and Father showed high multicollinearity, as identified by elevated VIF scores. This suggests these variables are highly interrelated and could impact model performance.
+
+- Model Performance:
+Linear Regression struggled to capture non-linear relationships in the data, limiting its predictive accuracy.
+Ensemble methods like Bagging and Random Forest provided better performance by reducing overfitting and increasing model robustness, proving to be more suitable for this complex dataset.
+
 
 # 📦 Deliverables
 
-- 📝 A Jupyter Notebook with the code, analysis
-- 📑 A slide deck for project presentation
-- 📄 This README for thorough project documentation.
+- 📝 Jupyter Notebook:
+Contains the complete code, data analysis, and model development process.
+- 📑 Slide Deck:
+A comprehensive presentation of the project findings and insights.
+- 📄 README:
+Detailed project documentation, including objectives, methodology, and results.
+
 
 
 
